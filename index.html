@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Blog</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="bg-gray hide"></div>
+    <header class="header">
+        <div class="burger-menu hide">
+            <div class="burger-stick"></div>
+            <div class="burger-stick"></div>
+            <div class="burger-stick"></div>
+        </div>
+        <div class="mobile-menu">
+            <nav>
+                <a class="nav-mobile-menu-item"  href="index.html">
+                    Accueil
+                </a>
+                <a class="nav-mobile-menu-item mobile-sign-up-btn" href="login/index.html">
+                    Se connecter
+                </a><a class="nav-mobile-menu-item mobile-sign-in-btn" href="">
+                    S'inscrire
+                </a>
+            </nav>
+        </div>
+        <div class="content-container">
+            <div class="header-container">
+        <img class="logo" src="imgs/path24.png" alt="Logo" width="92">
+        <div class="welcome-btn-container">
+            <a href="index.html" class="primary-button accueil-btn" >Accueil</a>
+            </div>
+        <input class="search-bar" type="text" name="search-bar" id="search-bar" placeholder="Rechercher">
+        <nav class="sign-in-sign-up">
+            <a class="sign-in-btn" href="">S'inscrire</a>
+            <a class="sign-up-btn" href="login/index.html">Se connecter</a>
+        </nav>
+    </div>
+    </div>
+    </header>
+    <main>
+        <div class="content-container">
+            <div class="add-post-form-container">
+                
+            </div>
+            <section class="posts-section"></section>
+            <div class="pagination">
+                <button class="next-page-btn bg-red previous-page hide">Précédent</button>
+                <div class="page-btns">
+                <button class="next-page-btn page-number-btn pagination-first-btn bg-red">1</button>
+                <button class="next-page-btn page-number-btn pagination-second-btn">2</button>
+                <button class="next-page-btn page-number-btn pagination-thirth-btn">3</button>
+            </div>
+                <button class="next-page-btn bg-red next-page">Suivant</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="content-container center">
+            <div class="padding-20"><img class="footer-logo" src="imgs/path24.png" width="150" alt="Logo"></div>
+            <section class="recent-posts-section">
+                <h2 class="recent-posts-section-title">Posts Récents</h2>
+                <div class="recent-posts">
+                
+            </div>
+            </section>
+            <section class="contact-section">
+                <h2>Contactez-nous</h2>
+                <form action="" method="POST" class="contact-form">
+                    <input class="contact-form-input-field" type="email" name="" id="" placeholder="Votre adresse email">
+                    <input class="contact-form-submit-btn" type="submit" value="Contacter">
+                </form>
+            </section>
+            <section class="contact-section">
+
+            </section>
+            <nav class="footer-nav">
+                <a href="index.html">
+                    <h2>
+                        Accueil
+                    </h2>                </a>
+                    <a class="footer-sign-up-btn" href="login/index.html">
+                    <h2>Se connecter</h2>
+                </a>
+                <a href="">
+                    <h2>Contact</h2>
+                </a>
+            </nav>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/mobileMenu.js"></script>
+    <script src="scripts/recentPosts.js"></script>
+    <script src="scripts/deletePosts.js"></script>
+</body>
+</html>
