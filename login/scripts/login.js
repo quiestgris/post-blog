@@ -15,7 +15,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
 document.querySelector(".login-form").addEventListener('submit', function (e) {
     e.preventDefault();
     for (let i = 0; i < users.length; i++) {
-        if (emailField.value == users[i].email && passwordField.value == 'admin') {
+        if (emailField.value == users[i].email) {
             window.location.href = '../profil/index.html';
             window.localStorage.setItem("user",JSON.stringify(users[i]))
             return undefined;
