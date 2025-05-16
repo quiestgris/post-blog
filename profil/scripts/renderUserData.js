@@ -87,11 +87,12 @@ function renderPosts(posts) {
 
 
 
-fetch('https://jsonplaceholder.typicode.com/posts')
+
+fetch(`https://jsonplaceholder.typicode.com/users/${user.id}/posts`)
     .then(response => response.json())
     .then(json => {
         renderPosts(json);
-        console.log(j)
+        console.log(j);
     })
 
 

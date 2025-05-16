@@ -159,9 +159,26 @@ header {
 
 }
 
-.search-bar {
-    min-width: 200px;
+.search-form {
     width: 50%;
+    min-width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-form-submit-btn {
+    padding: 20px 40px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    background-color: #6d1414;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+}
+
+.search-bar {
+    width: 100%;
     font-size: 20px;
     padding: 12px 10px;
     
@@ -484,6 +501,10 @@ footer .content-container {
     .header-container a {
         padding: 12px 20px;
     }
+    .search-form-submit-btn {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
 }
 
 @media screen and (max-width: 1082px) {
@@ -517,6 +538,15 @@ footer .content-container {
     }
     .burger-menu.hide {
         display: flex;
+    }
+    .search-form {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .search-form-submit-btn {
+        font-size: 18px;
+        padding: 20px;
     }   
 }
 

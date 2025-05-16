@@ -12,7 +12,7 @@ function renderRecentPosts(posts) {
       .then(users => {
         for (let i = recentPosts.length - 1; i >= 0; i--) {
         let post = document.createElement("div");
-        post.classList.add("recent-post")
+        post.classList.add("recent-post");
         
         let postTitle = document.createElement("h1");
         postTitle.classList.add("post-title");
